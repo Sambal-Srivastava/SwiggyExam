@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">SwiggyExam</string>
+    <string name="dummy_movie">Avengers</string>
 </resources>

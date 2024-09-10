@@ -5,12 +5,22 @@ import com.google.gson.annotations.SerializedName
 object MockResponseDto {
 
     data class MockResponse(
-        @SerializedName("data") var data: List<MockData>? = null
+        @SerializedName("Search") var data: List<MockData>? = null
     )
 
     data class MockData(
-        @SerializedName("state") var state: String? = null,
-        @SerializedName("population") var population: Long? = 0,
-        @SerializedName("counties") var counties: Int? = 0
+        @SerializedName("Title") var title: String? = null,
+        @SerializedName("Year") var year: String? = null,
+        @SerializedName("imdbID") var imdbId: String? = null,
+        @SerializedName("Type") var type: String? = null,
+        @SerializedName("Poster") var poster: String? = null
+    )
+
+    data class MovieDetailsResponse(
+        @SerializedName("Title") var title: String? = null,
+        @SerializedName("Year") var year: String? = null,
+        @SerializedName("imdbID") var imdbId: String? = null,
+        @SerializedName("Type") var type: String? = null,
+        @SerializedName("Poster") var poster: String? = null
     )
 }
